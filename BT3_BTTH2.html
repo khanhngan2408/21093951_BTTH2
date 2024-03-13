@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LIÊN HỆ</title>
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .container {
+            width: 900px;
+            border: 1px;
+            padding: 10px;
+            overflow: auto;
+         }  
+    /*==cột #sidebar==*/
+        #sidebar {
+            width: 280px;
+            height: 500px;
+            background: white;
+            float: left;
+        }
+    /*==cột #post==*/
+        #post {
+            width: 550px;
+            height: 500px;
+            background:white;
+            float: right;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: blue;
+            font-style: border;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .info {
+            text-align: left;
+            color:blueviolet;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: 1px solid #000;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+        ::placeholder {
+            display: block;
+            margin-bottom: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h2{
+            color:black;
+            font-size: 25px;
+            font-style: border;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        p{
+            font-size: 13px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content" class="container">
+        <h1>LIÊN HỆ</h1><hr style="height:2px;border-width:0;color:red;background-color:red">
+
+        <div id="post">
+            <p class="info">
+                Hãy liên lạc với chúng tôi bất cứ khi nào!!!
+            </p>
+            <form action="#">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Nhập tên của bạn">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Nhập email của bạn">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="title" name="title" placeholder="Nhập tiêu đề bài viết">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Nhập nội dung cần giải đáp"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">GỬI TIN NHẮN</button>
+                </div>
+            </form>
+        </div>
+        <div id="sidebar">
+            <h2>Thông tin</h2>
+            <p><i class="glyphicon glyphicon-remove"></i> Kp 6, P.Linh Trung, Tp. Thủ Đức, Tp.HCM</p>
+            <p><i class="glyphicon glyphicon-envelope"></i> info@uit.edu.vn</p>
+            <p><i class="glyphicon glyphicon-user"></i> +84 28 372 52002</p>
+        </div>
+        <div class="clear"></div>
+        
+    </div>
+</body>
+</html>
+    
